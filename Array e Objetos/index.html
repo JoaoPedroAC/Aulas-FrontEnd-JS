@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        window.onload = function() {
+            // [define o array] {define objeto}
+            var nomes = ['João', 'Matheus', 'Arthur', 'Eliel'];
+            console.log(nomes[0]);
+            // 
+            var animal = {};
+            animal.nome = [];
+            animal.nome[0] = 'Toddy';
+            animal.nome[1] = 'Spike';
+            animal.nome[2] = 'Xibbil';
+            animal.peso = 5 + ' Kg';
+            animal['idade'] = 2;
+            console.log(animal.nome[2], animal['peso'], animal.idade)
+                // vai retornar o tipo de variavel
+            console.log(typeof(animal.idade))
+        }
+    </script>
+</body>
+
+</html>
