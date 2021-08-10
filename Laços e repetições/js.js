@@ -22,4 +22,17 @@ window.onload = function() {
     } while (nome == 'gustavo') {
         console.log('Mentira');
     }*/
-}
+    function laco2(n) {
+        for (i = 0; i < 10; i++) {
+            n++;
+            /* if (n == 3) {
+                 // continue; //vai pular o numero 3, mas vai continuar o loop
+             };
+             if (n == 9) {
+                 // break; //vai parar antes do 9, mas dependendo da posição do .log pode parar no nove tbm
+             }*/
+            console.log(n);
+        };
+    };
+    laco2(0);
+};
