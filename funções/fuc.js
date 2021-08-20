@@ -35,8 +35,45 @@ window.onload = function() {
         obj2.func()
     */
     // dentro do array temos objeto
-    var variavel = [];
+    /*var variavel = [];
     variavel.obj = {};
     variavel.obj.nome = 'John';
-    console.log(variavel.obj.nome)
+    console.log(variavel.obj.nome)*/
+    /*
+        function testes() {
+            // esperando executar
+            console.log('chamando a function')
+        }
+        // chama function
+        testes();
+
+        function testes2(nome, idade) {
+            console.log('O nome é: ' + nome);
+            console.log('A idade é: ' + idade);
+            console.log('====================');
+        }
+        testes2('João', 21);
+        testes2('Matheus', 22);
+
+        function pegarNome(parametro) {
+            if (parametro == 1) {
+                // faz com q o programa retorne um objeto
+                return 'João';
+            } else {
+                return 'Outro nome'
+            }
+        }
+        var nome = pegarNome(0);
+        console.log(nome)*/
+    // outras formas de usar function(){}
+    /*var fun = function() {
+        alert('Olá novamente')
+    }
+    fun();
+
+    (function() {
+        alert('Oi d novuuu');
+        // para chamar a function é necessario nesse caso usar apenas ()
+    })();*/
+
 }
