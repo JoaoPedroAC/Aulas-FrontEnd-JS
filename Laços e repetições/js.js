@@ -37,7 +37,7 @@ window.onload = function() {
     };
     laco2(0);*/
 
-    function Nome() {
+    /*function Nome() {
         let nome = 'João'
             // é um laço tbm, onde switch onde fará d alvo a variavel
         switch (nome) {
@@ -51,5 +51,16 @@ window.onload = function() {
                 break;
         }
     }
-    Nome()
+    Nome()*/
+
+    var arr = ['João', 'Arthur', 'Eliel']
+        // lenght = é usado para saber a quantidade de elementos ou objetos dentro de um array
+        /* for (i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }*/
+
+    // ForEach = é mais especifio e moderno
+    arr.forEach(function(value, index) {
+        console.log(value, index)
+    })
 };
