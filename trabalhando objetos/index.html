@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com objetos</title>
+</head>
+
+<body>
+    <script>
+        function Pessoas() {
+            this.nome = 'João';
+            this.idade = 21;
+            this.printNome = function(nome) {
+                    console.log(nome)
+                }
+                // a variavel é animal e a função vai chamar a propria variavel
+            this.returnAnimal = function(animal) {
+                return animal;
+            }
+        }
+        // pessoa = new Pessoas()
+        // pessoa.printNome('Jorge')
+
+        function Animal(nome, peso, raca) {
+            if (nome == undefined) {
+                nome = 'Dog';
+            }
+            if (peso == undefined) {
+                peso = 5 + 'kg'
+            }
+            if (raca == undefined) {
+                raca = 'Xusto'
+            }
+            this.nome = nome;
+            this.peso = peso;
+            this.raca = raca;
+        }
+        /* animal = new Animal('Cão', 6 + 'kg');
+        console.log(animal.nome, animal.peso);
+
+        // como não foi passado nunhum valor, as variaveis dariam indefinidas, porem no if conseguimos consertar isso e se quiser passar algum valor sinta-se livre.
+
+        animal_2 = new Animal();
+        console.log(animal_2.nome, animal_2.peso)*/
+
+        // aqui o "animal" dentro do console é a nova variavel intanciando a função Pessoas() e graças ao seu return ele consegue acessar tudo dentro de Animal()
+        pessoa = new Pessoas();
+        animal = new Animal();
+        animal.raca = 'Chau-Chau';
+
+        console.log(pessoa.returnAnimal(animal).raca)
+    </script>
+</body>
+
+</html>

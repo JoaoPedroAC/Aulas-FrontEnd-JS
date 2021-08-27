@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instacinado Funções</title>
+</head>
+
+<body>
+    <script>
+        function Pessoas() {
+            // se não houver esse this. ele nao vai identificar 
+            this.nome = 'João'
+        };
+        // esse new vc esta dando um novo conceito para a function Pessoas()
+        var pessoa = new Pessoas();
+        var pessoa2 = new Pessoas();
+
+        pessoa = 'Eliel'
+
+        console.log(pessoa2.nome, pessoa)
+    </script>
+</body>
+
+</html>
