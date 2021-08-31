@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            constructor(nome) {
+                this.nome = nome;
+            }
+            printNome() {
+                return this.nome;
+            }
+
+        }
+        // extends está herdando as coisas da classe mãe
+        class Cachorro extends Animal {
+            constructor(nome) {
+                // super esta invocando o contruct da classe mãe
+                super(nome);
+                this.raca = 'Buldog';
+            }
+            printRaca() {
+                // sem esse método ele retorna 'indefinido'
+                return this.raca;
+            }
+        }
+        animal = new Animal();
+        console.log(animal.nome = 'Gato')
+
+        cachorro = new Cachorro();
+        cachorro.raca = 'chay'
+        console.log(cachorro.printRaca());
+        // alert(animal.nome)
+    </script>
+</body>
+
+</html>
